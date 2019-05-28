@@ -9,22 +9,26 @@ for i in range (n):
         if (cartillas <= 3):
             NC.append(cartillas)
             break
-            
-print(NC)     
+
+def SumaPozo():
+    suma = 0
+    for i in NC:
+        suma = suma + i
+    pozo = suma*5
+
+    return pozo    
 
 
-
-
-
-
-
-
-
-
+OB = int(input("¿Desea obtener una bolilla?: "))
 
 rb = int(input("Desea mostrar el resumen de bolillas"))
+
 finjuego = int(input("Desea finalizar juego"))
     
+
+R = int(input("¿ Desea reiniciar el juego?: "))
+ 
+
 
 
 
