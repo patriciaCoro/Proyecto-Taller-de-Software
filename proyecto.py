@@ -1,3 +1,5 @@
+import.random
+
 n= int(input("Ingrese numero de jugadores: "))
 J =[]
 NC =[]
@@ -16,12 +18,12 @@ def SumaPozo():
         suma = suma + i
     pozo = suma*5
 
-    return pozo    
+    return pozo
 
-
+    
 OB = int(input("¿Desea obtener una bolilla?: "))
 
-rb = int(input("Desea mostrar el resumen de bolillas"))
+rb = int(input("Desea mostrar el resumen de bolillas:"))
 
 finjuego = int(input("Desea finalizar juego"))
     
