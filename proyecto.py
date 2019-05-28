@@ -12,7 +12,29 @@ for i in range (n):
             
 print(NC)            
 
-    
+OB = int(input("¿Desea obtener una bolilla?: "))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R = int(input("¿ Desea reiniciar el juego?: "))
+ 
+
 
 
 
