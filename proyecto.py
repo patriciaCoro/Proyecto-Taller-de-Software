@@ -10,8 +10,20 @@ for i in range (n):
             NC.append(cartillas)
             break
             
-print(NC)            
+print(NC)     
 
+
+
+
+
+
+
+
+
+
+
+rb = int(input("Desea mostrar el resumen de bolillas"))
+finjuego = int(input("Desea finalizar juego"))
     
 
 
