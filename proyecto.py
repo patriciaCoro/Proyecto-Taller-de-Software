@@ -1,4 +1,3 @@
-import.random
 
 n= int(input("Ingrese numero de jugadores: "))
 J =[]
