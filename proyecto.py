@@ -1,4 +1,3 @@
-import.random
 
 n= int(input("Ingrese numero de jugadores: "))
 J =[]
@@ -11,6 +10,7 @@ for i in range (n):
         if (cartillas <= 3):
             NC.append(cartillas)
             break
+
 
 def SumaPozo():
     suma = 0
@@ -29,6 +29,7 @@ finjuego = int(input("Desea finalizar juego"))
     
 
 R = int(input("¿ Desea reiniciar el juego?: "))
+
  
 
 
