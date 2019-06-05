@@ -15,6 +15,17 @@ while True:
     if menu_opciones == "1":
         print ("")
         input("Haz pulsado la opcion Registrar datos... \npulsa una tecla para continuar")
+        n= int(input("\nIngrese numero de jugadores: "))
+        J =[]
+        NC =[]
+        for i in range (n):
+            Integrante = input("Integrante" + str(i+1)+": ")
+            J.append(Integrante)
+            while True:
+                cartillas = int(input("Número de cartillas: "))
+                if (cartillas <= 3):
+                    NC.append(cartillas)
+                    break
     elif menu_opciones == "2":
         print ("")
         input("Haz pulsado la opcion Obtener bolillas... \npulsa una tecla para continuar")
