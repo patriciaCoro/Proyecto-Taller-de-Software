@@ -72,7 +72,7 @@ while True:
         print (bol_sac)
     elif menu_opciones == "3":
         print("")
-        print("finalizando.........")
+        print("finalizando..............")
         print("Haz pulsado la opción Finalizar juego, el pozo ganado es: ")
         print(pozo)
         sleep(2)
