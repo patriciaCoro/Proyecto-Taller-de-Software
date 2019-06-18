@@ -26,11 +26,11 @@ for i in range (n):
             except ValueError:
                 print ("Atención debe ingresar un número entero.")
                 
-        if (cartillas <= 3):
+        if (1<=cartillas <= 3):
             NumCartillas.append(cartillas)
             break
         else:
-            print("Recuerde que solo puede commprar 3 cartillas")
+            print("Recuerde que solo puede commprar de 1 a 3 cartillas")
 
 bol_sac =[]
 
@@ -107,11 +107,11 @@ while True:
                     except ValueError:
                         print ("Atención debe ingresar un número entero.")
                 
-                if (cartillas <= 3):
+                if (1<=cartillas <= 3):
                     NumCartillas.append(cartillas)
                     break
                 else:
-                    print("Recuerde que solo puede commprar 3 cartillas")
+                    print("Recuerde que solo puede commprar de 1 a 3 cartillas")
             
         bol_sac =[]
 
