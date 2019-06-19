@@ -11,6 +11,11 @@ while True:
                
     except ValueError:
         print ("Atención debe ingresar un número entero.")
+    
+    if (1<=n):
+        break
+    else:
+        print("Recuerde que debe haber un jugador como mínimo")
         
 lista_integrantes =[]
 NumCartillas =[]
@@ -91,7 +96,12 @@ while True:
                
             except ValueError:
                 print ("Atención debe ingresar un número entero.")
-        
+
+            if (1<=n):
+                break
+            else:
+                print("Recuerde que debe haber un jugador como mínimo")
+
         
         lista_integrantes =[]
         NumCartillas =[]
