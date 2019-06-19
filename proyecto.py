@@ -1,46 +1,46 @@
 
 from time import sleep
 import random
-
-while True:
-    n = input("Ingrese número de jugadores:")
-        
-    try:
-        n = int(n)
-        break
-               
-    except ValueError:
-        print ("Atención debe ingresar un número entero.")
-    
-    if (1<=n):
-        break
-    else:
-        print("Recuerde que debe haber un jugador como mínimo")
-        
-lista_integrantes =[]
-NumCartillas =[]
-for i in range (n):
-    Integrante = input("Integrante" + str(i+1)+": ")
-    lista_integrantes.append(Integrante)
+def Inicio():
     while True:
-        while True:
-            cartillas = input("Número de cartillas: ")
-            try:
-                cartillas = int(cartillas)
-                break
-            except ValueError:
-                print ("Atención debe ingresar un número entero.")
-                
-        if (1<=cartillas <= 3):
-            NumCartillas.append(cartillas)
+        n = input("Ingrese número de jugadores:")
+        
+        try:
+            n = int(n)
+            break
+               
+        except ValueError:
+            print ("Atención debe ingresar un número entero.")
+    
+        if (1<=n):
             break
         else:
-            print("Recuerde que solo puede commprar de 1 a 3 cartillas")
+            print("Recuerde que debe haber un jugador como mínimo")
+        
+    lista_integrantes =[]
+    NumCartillas =[]
+    for i in range (n):
+        Integrante = input("Integrante" + str(i+1)+": ")
+        lista_integrantes.append(Integrante)
+        while True:
+            while True:
+                cartillas = input("Número de cartillas: ")
+                try:
+                    cartillas = int(cartillas)
+                    break
+                except ValueError:
+                    print ("Atención debe ingresar un número entero.")
+                
+            if (1<=cartillas <= 3):
+                NumCartillas.append(cartillas)
+                break
+            else:
+                print("Recuerde que solo puede commprar de 1 a 3 cartillas")
 
-bol_sac =[]
+    bol_sac =[]
 
-num = list(range(1,81))
-random.shuffle(num)
+    num = list(range(1,81))
+    random.shuffle(num)
 
 def mostrar_bolilla():
     resultado = num[0]
@@ -49,10 +49,12 @@ def mostrar_bolilla():
        
     return resultado
 
-suma = 0
-for i in NumCartillas:
-    suma = suma + i
-pozo = suma*5
+def pozito():
+    suma = 0
+    for i in NumCartillas:
+        suma = suma + i
+    pozo = suma*5
+    return pozo
 
       
 def menu():
@@ -136,6 +138,7 @@ while True:
     else:
         print("")
         print("Ingrese un número válido")
+        
 
  
 
